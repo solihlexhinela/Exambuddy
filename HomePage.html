@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HomePage EXAMBUDDY</title>
+    <style>
+      .header{
+        height: 55px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: green;
+
+        z-index: 1000;
+      }
+      .left-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        
+        margin-left: 24px;
+      }
+      .name{
+        font-family: Arial;
+        font-size: 24px;
+      }
+      .pen{
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+        opacity: 0.1;
+      }
+
+      .right-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .notifications,
+      .profilePicture{
+        width: 40px;
+      }
+      .profilePicture{
+        margin-right: 30px;
+        border-radius: 50px;
+      }
+      .notifications{
+        margin-right: 10px;
+        width: 30px;
+      }
+
+      .helpLink{
+        margin-right: 20px;
+        color: rgb(209, 252, 253);
+      }
+
+      .main{
+        background-color: rgba(195, 251, 243, 0.999);
+        height: 1000px;
+        width: 100000px;
+      }
+      
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <div class="name">EXAMBUDDY</div>
+        <img class="pen" src="pen.png" alt="">
+      </div>
+      <div class="right-section">
+        <div class="helpline">
+          <a class="helpLink" href="">Help</a>
+        </div>
+        <div>
+          <img class="notifications" src="icons/pictures/notifications.svg" alt="">
+        </div>
+        <div class="profile">
+          <img class="profilePicture" src="pictures/profilePicture.JPG" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="welcomePassage">
+        <p>WELCOME USER</p>
+        <p>FUN FACT! Did you know the tallest building in the world is the Abudabi building in Dubai &#x1F60D; </p>
+      </div>
+      <div>
+        <input type="text" placeholder="Search for a subject or topic here...">
+        <button searchbtn>
+          <img src="icons/pictures/search.svg" alt="">
+        </button>
+      </div>
+      <div>
+        <img src="pictures/image.png" alt="">
+        <p class="imgtxt">ONBOARDING</p>
+      </div>
+      <div>
+        <p class="subjtxt">My Subjects: </p>
+        <div subjectsGrid>
+          <div class="agricGrid">
+            Agricultural Science
+          </div>
+          <div class="conGrid">
+            Consumer Studies
+          </div>
+          <div class="mathlitGrid">
+            Mathematics Literacy
+          </div>
+          <div class="engGrid">
+            English FAL
+          </div>
+          <div class="lifeSciGrid">
+            Life Science
+          </div>
+          <div class="xhosaGrid">
+            IsiXhosa Home Language
+          </div>
+
+        </div>
+      </div>
+    <div>
+
+    </div>
+    </div>
+    
+  </body>
+</html>

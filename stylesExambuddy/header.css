@@ -1,0 +1,59 @@
+.image{
+        width: 100%;
+        position: relative;
+      }
+      .p{
+        font-family: arial;
+      }
+      .header{
+        height: 55px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: green;
+
+        z-index: 1000;
+      }
+      .left-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        
+        margin-left: 24px;
+      }
+      .name{
+        font-family: Arial;
+        font-size: 24px;
+      }
+      .pen{
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+        opacity: 0.1;
+      }
+
+      .right-section{
+        
+        margin-right: 18px;
+        font-family: arial;
+        color: white;
+      }
+
+      .login{
+        margin-right: 5px;
+        font-size: 15px;
+        color: white;
+      }
+      .Sign{
+        font-size: 15px;
+        color: white;
+      }

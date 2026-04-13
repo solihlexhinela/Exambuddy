@@ -1,0 +1,60 @@
+.Body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        margin-top: 100px;
+        width: 500px;
+        height: 400px;
+        margin-left: 505px;
+
+        
+        background-color: whitesmoke;
+
+      }
+      .p{
+        font-family: arial;
+
+      }
+      .welcome{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+      .con{
+        margin-top: 12px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .btnLogin{
+        margin-top: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        
+
+        background-color: green;
+        color: white;
+      }
+      .btnLogin:active{
+        opacity: 0.5;
+        
+      }
+      .email{
+        margin-left: -60px;
+        margin-bottom: 5px;  /*Aligning the email text variable with the input variable*/
+      }
+      .pass{
+         margin-left: -93px;
+         margin-bottom: 5px;
+      }
+      .forgot{
+        color: green;
+      }
+      
