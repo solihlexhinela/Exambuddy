@@ -1,0 +1,281 @@
+body{
+        background-color: rgba(212, 245, 220, 0.999);
+      }
+.header{
+        height: 55px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: green;
+
+        z-index: 1000;
+      }
+      .left-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        
+        margin-left: 24px;
+      }
+      .name{
+        font-family: Arial;
+        font-size: 24px;
+      }
+      .pen{
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+        
+      }
+
+      .right-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .notifications,
+      .profilePicture{
+        width: 40px;
+      }
+      .profilePicture{
+        margin-right: 30px;
+        border-radius: 50px;
+      }
+      .notifications{
+        margin-right: 10px;
+        width: 30px;
+      }
+
+      .helpLink{
+        margin-right: 20px;
+        color: rgb(209, 252, 253);
+      }
+
+      .main{
+        margin-top: 55px;
+        margin-left: -7px;
+        margin-right: -7px;
+        background-color: rgba(212, 245, 220, 0.999);
+        height: 1000px;
+        
+      }
+      
+      .searchflex{
+        
+        display: flex;
+        flex-direction: row;  
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+       
+        /*border-width: 1px;
+        border-color: gray; for simplicity this code includes only the bottom border and additional styles like the width with 1px
+        the solid style is already stated in the code, so no need to add it here*/
+        border-radius: 0;
+        border-bottom: 1px solid gray;
+       
+      }
+      .searchBar{        
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 400px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        padding-left: 50px;
+        padding-right: 40px;
+        
+      }
+      
+      .searchBtn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        right: 475px;
+
+        padding-top: 5px;
+        padding-bottom: 2px;
+      }
+      .search-icon{
+        margin-left: -5px;
+        width: 25px;
+        height: 25px;
+        right: 15px;
+             
+      }
+      .txt1{
+        margin-top: 0px;
+        font-size: 15px;
+        color: rgb(99, 99, 99);
+      }
+      .welcometxt{
+        text-align: center;
+        font-family: Arial;
+        font-size: 24px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+      }
+      .thread1{
+        
+        text-align: left;
+        border: gray solid 1px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+
+        width: 49.5%;
+        margin-left: 5px;
+        
+      }
+      .welcomeContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+        margin-left: 5px;
+      }
+      .welcomePassage{
+        text-align: center;
+        border: gray solid 1px;
+      }
+      .calanderContainer{
+        border: 1px solid gray;
+        margin-top: -95px;
+        width: 98%;
+        margin-right: 5px;
+      }
+      .calandertxt{
+        margin-top: 5px;
+        margin-left: 3px;
+      }
+      .class-info-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+       /* Adjust the grid layout for smaller screens*/
+      @media (max-width: 1000px) {
+        .class-info-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      @media (max-width: 999px) {
+        .class-info-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (max-width: 750px) {
+        .class-info-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      
+      .classPreview{
+        background-color: lightblue;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: Arial;
+        font-size: 18px;
+      }
+      .classPreview:hover{
+        background-color: #e0e0e0;
+        cursor: pointer;
+      }
+      
+
+      /* Different colors for each class preview */
+      .classPreview:nth-child(1) { background-color: #FFB3BA};/* Light pink */
+      .classPreview:nth-child(2) { background-color: #baefff; } /* Light green */
+      .classPreview:nth-child(3) { background-color: #BAE1FF; } /* Light blue */
+      .classPreview:nth-child(4) { background-color: #FFFFBA; } /* Light yellow */
+      .classPreview:nth-child(5) { background-color: #FFD1BA; } /* Light orange */
+      .classPreview:nth-child(6) { background-color: #E0BAFF; } /* Light purple */
+      .classPreview:nth-child(7) { background-color: #BAFFEB; } /* Light teal */
+      .classPreview:nth-child(8) { background-color: #FFDFBA; } /* Light peach */
+
+      /* Calendar Styles */
+      .calendar {
+        width: 700px;
+        margin: 20px auto;
+        background-color: transparent;
+        opacity: 0.9;
+        border-radius: 0px;
+        padding: 20px;
+        /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+      }
+      .calendar-header h3 {
+        text-align: center;
+        margin: 0 0 20px 0;
+        color: #333;
+        font-family: Arial, sans-serif;
+      }
+      .calendar-days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+        margin-bottom: 10px;
+      }
+      .calendar-days div {
+        text-align: center;
+        font-weight: bold;
+        color: #666;
+        font-size: 14px;
+      }
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+      }
+      .day {
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+      .day:hover {
+        background-color: #e8f5e8;
+      }
+      .day:empty {
+        background-color: transparent;
+        border: none;
+      }
+      .imageContainer{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        
+      }
+      .image1{
+        width: 50%;
+        height: auto;
+        margin-top: 5%;
+      }
+      .imgtxt{
+        position: absolute;
+        color: white;
+        font-size: 24px;
+        font-family: Arial;
+      }

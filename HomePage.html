@@ -2,83 +2,14 @@
 <html>
   <head>
     <title>HomePage EXAMBUDDY</title>
-    <style>
-      .header{
-        height: 55px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: green;
-
-        z-index: 1000;
-      }
-      .left-section{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        
-        margin-left: 24px;
-      }
-      .name{
-        font-family: Arial;
-        font-size: 24px;
-      }
-      .pen{
-        width: 30px;
-        height: 30px;
-        margin-top: -10px;
-        opacity: 0.1;
-      }
-
-      .right-section{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .notifications,
-      .profilePicture{
-        width: 40px;
-      }
-      .profilePicture{
-        margin-right: 30px;
-        border-radius: 50px;
-      }
-      .notifications{
-        margin-right: 10px;
-        width: 30px;
-      }
-
-      .helpLink{
-        margin-right: 20px;
-        color: rgb(209, 252, 253);
-      }
-
-      .main{
-        background-color: rgba(195, 251, 243, 0.999);
-        height: 1000px;
-        width: 100000px;
-      }
-      
-
-
-
-    </style>
+    <link rel="stylesheet" href="stylesExambuddy/header.css">
+    <link rel="stylesheet" href="stylesExambuddy/homePageStyle.css">
   </head>
   <body>
     <div class="header">
       <div class="left-section">
         <div class="name">EXAMBUDDY</div>
-        <img class="pen" src="pen.png" alt="">
+        <img class="pen" src="icons/pictures/draw.svg" alt="">
       </div>
       <div class="right-section">
         <div class="helpline">
@@ -93,40 +24,104 @@
       </div>
     </div>
     <div class="main">
-      <div class="welcomePassage">
-        <p>WELCOME USER</p>
-        <p>FUN FACT! Did you know the tallest building in the world is the Abudabi building in Dubai &#x1F60D; </p>
-      </div>
-      <div>
-        <input type="text" placeholder="Search for a subject or topic here...">
-        <button searchbtn>
-          <img src="icons/pictures/search.svg" alt="">
+      <div class="searchflex">
+        <input class="searchBar" type="text" placeholder="Search for a subject or topic here...">
+        <button class="searchBtn">
+          <img class="search-icon" src="icons/pictures/search.svg" alt="">
         </button>
+        
       </div>
-      <div>
-        <img src="pictures/image.png" alt="">
-        <p class="imgtxt">ONBOARDING</p>
+      <p class="welcometxt">WELCOME, Solethu</p>
+      <div class="thread1">
+        <p class="txt1"> Fun fact of the day &#x1F60D;</p>        
+        <p class="txt2">Did you know the tallest building in the world is the Abudabi building in Dubai &#x1F60D; </p>
       </div>
+      <div class="welcomeContainer">
+        <div class="welcomePassage">
+          <div class="imageContainer">
+            <img class="image1" src="pictures/image.png" alt="">
+            <p class="imgtxt">ONBOARDING</p>
+          </div>
+        </div>
+        <div class="calanderContainer">
+          <p class="calandertxt">Calander</p>
+          <div class="calendar">
+            <div class="calendar-header">
+              <h3>April 2026</h3>
+            </div>
+            <div class="calendar-days">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="calendar-grid">
+              <div class="day"></div>
+              <div class="day">1</div>
+              <div class="day">2</div>
+              <div class="day">3</div>
+              <div class="day">4</div>
+              <div class="day">5</div>
+              <div class="day">6</div>
+              <div class="day">7</div>
+              <div class="day">8</div>
+              <div class="day">9</div>
+              <div class="day">10</div>
+              <div class="day">11</div>
+              <div class="day">12</div>
+              <div class="day">13</div>
+              <div class="day">14</div>
+              <div class="day">15</div>
+              <div class="day">16</div>
+              <div class="day">17</div>
+              <div class="day">18</div>
+              <div class="day">19</div>
+              <div class="day">20</div>
+              <div class="day">21</div>
+              <div class="day">22</div>
+              <div class="day">23</div>
+              <div class="day">24</div>
+              <div class="day">25</div>
+              <div class="day">26</div>
+              <div class="day">27</div>
+              <div class="day">28</div>
+              <div class="day">29</div>
+              <div class="day">30</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div>
         <p class="subjtxt">My Subjects: </p>
-        <div subjectsGrid>
-          <div class="agricGrid">
+        <!sorting classes into a grid to make it look neater and more organized-->
+        <div class="class-info-grid">
+          <div class="classPreview">
             Agricultural Science
           </div>
-          <div class="conGrid">
+          <div class="classPreview">
             Consumer Studies
           </div>
-          <div class="mathlitGrid">
+          <div class="classPreview">
             Mathematics Literacy
           </div>
-          <div class="engGrid">
+          <div class="classPreview">
             English FAL
           </div>
-          <div class="lifeSciGrid">
+          <div class="classPreview">
             Life Science
           </div>
-          <div class="xhosaGrid">
+          <div class="classPreview">
             IsiXhosa Home Language
+          </div>
+          <div class="classPreview">
+            Acounting
+          </div>
+          <div class="classPreview">
+            Economics
           </div>
 
         </div>
