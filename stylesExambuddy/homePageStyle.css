@@ -76,14 +76,14 @@ body{
         flex-direction: row;  
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
+        /*margin-top: 20px;
 
        
         /*border-width: 1px;
         border-color: gray; for simplicity this code includes only the bottom border and additional styles like the width with 1px
         the solid style is already stated in the code, so no need to add it here*/
-        border-radius: 0;
-        border-bottom: 1px solid gray;
+       /* border-radius: 0;
+        border-bottom: 1px solid gray;*/
        
       }
       .searchBar{        
@@ -123,9 +123,9 @@ body{
       .welcometxt{
         text-align: center;
         font-family: Arial;
-        font-size: 24px;
-        margin-top: 5px;
-        margin-bottom: 0px;
+        font-size: 30px;
+        margin-top: 70px;
+        margin-bottom: 10px;
       }
       .thread1{
         
@@ -193,20 +193,22 @@ body{
         font-size: 18px;
       }
       .classPreview:hover{
-        background-color: #e0e0e0;
+        
         cursor: pointer;
       }
-      
+      .classPreview:active{
+        opacity: 0.7;
+      }
 
       /* Different colors for each class preview */
-      .classPreview:nth-child(1) { background-color: #FFB3BA};/* Light pink */
-      .classPreview:nth-child(2) { background-color: #baefff; } /* Light green */
-      .classPreview:nth-child(3) { background-color: #BAE1FF; } /* Light blue */
-      .classPreview:nth-child(4) { background-color: #FFFFBA; } /* Light yellow */
-      .classPreview:nth-child(5) { background-color: #FFD1BA; } /* Light orange */
-      .classPreview:nth-child(6) { background-color: #E0BAFF; } /* Light purple */
-      .classPreview:nth-child(7) { background-color: #BAFFEB; } /* Light teal */
-      .classPreview:nth-child(8) { background-color: #FFDFBA; } /* Light peach */
+      .class-info-grid > .classPreview:nth-child(1) { background-color: #FFB3BA; } /* Light pink */
+      .class-info-grid > .classPreview:nth-child(2) { background-color: #baefff; } /* Light green */
+      .class-info-grid > .classPreview:nth-child(3) { background-color: #BAE1FF; } /* Light blue */
+      .class-info-grid > .classPreview:nth-child(4) { background-color: #FFFFBA; } /* Light yellow */
+      .class-info-grid > .classPreview:nth-child(5) { background-color: #FFD1BA; } /* Light orange */
+      .class-info-grid > .classPreview:nth-child(6) { background-color: #E0BAFF; } /* Light purple */
+      .class-info-grid > .classPreview:nth-child(7) { background-color: #BAFFEB; } /* Light teal */
+      .class-info-grid > .classPreview:nth-child(8) { background-color: #FFDFBA; } /* Light peach */
 
       /* Calendar Styles */
       .calendar {

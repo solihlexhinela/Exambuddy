@@ -1,0 +1,32 @@
+.heading-container{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom: 1px solid gray;
+      }
+      .side-panel{
+        display: flex;
+        flex-direction: column;
+        
+        width: 200px;
+        height: 100%;
+        
+        box-sizing: border-box;
+        border-right: 1px solid gray;
+      }
+      .panel-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        margin: 0px 8px 2px 0px;
+        padding: 8px 0px 8px 16px;
+
+      }
+      .icon{
+       margin: 0px 0px 0px 16px;
+      }
