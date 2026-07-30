@@ -167,7 +167,7 @@ body{
         margin-left: 5px;
         margin-right: 5px;
       }
-       /* Adjust the grid layout for smaller screens*/
+       /* Adjust the grid layout for smaller screens,so if you're using a smaller PC the layout can adjust to the size of that PC ;)*/
       @media (max-width: 1000px) {
         .class-info-grid {
           grid-template-columns: repeat(4, 1fr);
