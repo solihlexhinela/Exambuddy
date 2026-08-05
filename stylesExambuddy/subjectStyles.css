@@ -1,7 +1,15 @@
 p{
   font-family: 'Roboto', sans-serif;
 }
-
+main{
+        display: grid;
+        grid-template-columns: 210px 1fr;
+     
+      }
+a{
+  text-decoration: none;
+  color: black;
+}
 .heading-container{
         margin-top: 40px;
         display: flex;
@@ -21,6 +29,7 @@ p{
         
         box-sizing: border-box;
         border-right: 1px solid gray;
+        padding-top: 10px;
       ;
       }
       .panel-container{
@@ -28,20 +37,25 @@ p{
         flex-direction: row;
         align-items: center;
         
-        margin: 0px 8px 2px 0px;
+        margin: 0px 8px 2px -8px;
         padding: 8px 0px 8px 16px;
-
       }
+      .panel-container:hover{
+        background-color: rgb(235 235 235);
+        cursor: pointer;
+      }
+      /*.panel-container:active{
+        
+        background-color: lightgreen;
+      }*/
       .icon{
        margin: 0px 0px 0px 8px;
       }
-    
 
-
-      main{
-        display: grid;
-        grid-template-columns: 210px 1fr;
-     
+      .panel-btn{
+        width: 200px;
+        justify-content: center;
+        align-items: baseline;
       }
       
       .name-text{
@@ -59,6 +73,7 @@ p{
         display: flex;
         flex-direction: column;
       }
+      
       .overview-content-container{
         display: flex;
         flex-direction: row;
@@ -68,7 +83,7 @@ p{
       }
       .overview-content,
       .overview-content2{
-        flex: 1 1 45%;
+        flex: 1 1 45%;  /*making the divs have the same width*/
         width: 45%;
         border: 1px solid gray;
         padding: 4px 10px 0px 8px;
@@ -87,5 +102,36 @@ p{
         font-size: 20px;
 
       }
+      .notes-content{
+        border: 1px solid gray;
+        margin: 10px 0px 0px 0px;
+        padding: 0px 4px 4px 10px;
+      }
+      .material-heading{
+        font: 18px 'Roboto', sans-serif;
+        color: white;
+        background-color: green;
+        margin: 30px 30px 10px 10px;
+      }
+      .material-txt{
+        padding: 4px 10px;
+      }
+
+      .notes-items{
+       
+        padding: 20px 10px 20px 10px;
+        margin: 20px 10px 20px 10px;
+       
+      }
+      .notesLink{
+        color: black;
+        font: 20px 'Roboto', sans-serif;
+        background-color: #e3e4e5;
+        margin: 0px 4px 0px 0px;
+        padding: 10px 16px;
+        border-radius: 6px;
+        border: 1px solid gray;
+      }
+
       
       
