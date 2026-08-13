@@ -20,6 +20,7 @@ a{
         box-sizing: border-box;
         border-bottom: 1px solid gray;
       }
+      /*styling the overview panel*/
       .side-panel{
         display: flex;
         flex-direction: column;
@@ -44,10 +45,10 @@ a{
         background-color: rgb(235 235 235);
         cursor: pointer;
       }
-      /*.panel-container:active{
+      .panel-container:active{
         
-        background-color: lightgreen;
-      }*/
+        background-color: lightgray;
+      }
       .icon{
        margin: 0px 0px 0px 8px;
       }
@@ -102,6 +103,8 @@ a{
         font-size: 20px;
 
       }
+
+      /*styling the notes section*/
       .notes-content{
         border: 1px solid gray;
         margin: 10px 0px 0px 0px;
@@ -133,5 +136,19 @@ a{
         border: 1px solid gray;
       }
 
-      
+      /*styling the video library panel*/
+      .video-grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px;
+        
+      }
+
+      .video-grid{
+        margin: 0px 8px 12px 0px;
+        border: 1px solid gray;
+      }
+      .video-txt{
+        padding: 4px;
+      }
       
