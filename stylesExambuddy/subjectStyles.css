@@ -139,10 +139,16 @@ a{
       /*styling the video library panel*/
       .video-grid-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         padding: 10px;
         
       }
+      @media (max-width: 750px) {
+        .video-grid-container { 
+        grid-template-columns: repeat(2, 1fr);
+      }
+      }
+      
 
       .video-grid{
         margin: 0px 8px 12px 0px;
